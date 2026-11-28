@@ -1,0 +1,27 @@
+# ===== 1. 全体設定 =====
+version: 2
+updates:
+  # ===== 2. npmの更新 =====
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 3
+    groups:
+      minor-and-patch:
+        update-types:
+          - minor
+          - patch
+
+  # ===== 3. GitHub Actionsの更新 =====
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 3
+    groups:
+      actions:
+        patterns:
+          - "*"

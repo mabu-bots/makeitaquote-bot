@@ -1,0 +1,16 @@
+# ===== 1. 全ファイル共通 =====
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# ===== 2. 言語ごとのインデント =====
+[*.{ts,js,json,yaml,yml,ps1,sh}]
+indent_style = space
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
