@@ -5,7 +5,7 @@
   },
   "description": "メッセージや任意のテキストから「名言風」捏造画像を生成する Discord Bot (Make It a Quote 形式)",
   "devDependencies": {
-    "@types/node": "^24.0.0",
+    "@types/node": "^26.6.10",
     "prettier": "^3.6.2",
     "typescript": "^5.9.3"
   },
